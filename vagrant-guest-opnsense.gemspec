@@ -1,8 +1,9 @@
-require_relative 'lib/vagrant/guest/opnsense/version'
+$LOAD_PATH.unshift File.expand_path('./lib', __dir__)
+require 'vagrant-guests-opnsense/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "vagrant-guest-opnsense"
-  spec.version       = Vagrant::Guest::Opnsense::VERSION
+  spec.version       = VagrantPlugins::GuestOPNsense::VERSION
   spec.authors       = ["Fabio Bertagna"]
   spec.email         = ["bertagna@puzzle.ch"]
 
