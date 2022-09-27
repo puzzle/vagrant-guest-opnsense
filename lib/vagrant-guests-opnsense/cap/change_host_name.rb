@@ -1,3 +1,5 @@
+require "vagrant/util/guest_hosts"
+
 module VagrantPlugins
   module GuestOPNsense
     module Cap

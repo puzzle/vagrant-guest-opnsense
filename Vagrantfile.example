@@ -1,0 +1,7 @@
+Vagrant.require_plugin "vagrant-guest-opnsense"
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "fbertagna/opnsense"
+  config.vm.box_version = "22.1.2"
+  config.vm.hostname = "opnsense.vagrant.test"
+end
