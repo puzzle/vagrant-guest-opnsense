@@ -1,4 +1,10 @@
-require "vagrant"
+# frozen_string_literal: true
+
+begin
+  require 'vagrant'
+rescue LoadError
+  raise 'The Vagrant Libvirt plugin must be run within Vagrant.'
+end
 
 module VagrantPlugins
   module GuestOPNsense
@@ -15,7 +21,6 @@ module VagrantPlugins
         require_relative "cap/change_host_name"
         Cap::ChangeHostName
       end
-
     end
   end
 end

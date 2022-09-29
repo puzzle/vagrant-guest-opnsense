@@ -1,6 +1,6 @@
 require "rubygems"
 require_relative "util/dummy_communicator"
-require_relative "../lib/vagrant-guests-opnsense"
+require_relative "../lib/vagrant-guest-opnsense"
 
 describe "VagrantPlugins::GuestOPNsense::Cap::ChangeHostName" do
   let(:described_class) do
